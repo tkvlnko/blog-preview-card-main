@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Figtree';
+    background-color: hsl(47, 88%, 63%);
+    padding: 8rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    width: 20rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    filter: drop-shadow(16px 16px 0 black);
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    filter: drop-shadow(25px 25px 0 black);
+
+}
+
+.main-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: hsl(0, 0%, 50%);
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 10px 0 0 0;
+    transition: 0.3s ease;
+}
+
+h1:hover {
+    color:hsl(47, 88%, 63%);
+}
+
+.profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card > img {
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.profile > img {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 15px;
+}
+
+
+span {
+    background-color: hsl(47, 88%, 63%);
+    padding: 0.4rem 0.7rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 1rem 1rem;
+        font-size: 12px;
+    }
+
+    .card {
+        max-width: 85%;
+        filter: drop-shadow(8px 8px 0 black);
+
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 20px;
+        transition: 0.3s ease;
+    }
+
+    .main-text {
+        font-size: 14px;
+        line-height: 22px;
+        color: hsl(0, 0%, 50%);
+    }
+
+    .card > img {
+        margin-bottom: 15px;
+    }
+
+    .profile-name {
+        font-size: 16px;
+    }
+
+    .card > img {
+        height: 12rem;
+        width: 100%;
+        object-fit:cover;
+    }
+
+    span {
+        padding: 0.4rem 0.7rem;
+        border-radius: 4px;
+    }
+
+    .profile > img {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 15px;
+    }
+}
